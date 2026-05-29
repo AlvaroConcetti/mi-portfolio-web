@@ -9,9 +9,12 @@
 </head>
 <body>
 
+    <canvas id="starfield"></canvas>
+
     <!-- HEADER -->
     <header id="header">
         <nav>
+            <a href="#inicio" class="nav-logo">Alvaro Concetti</a>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -35,35 +38,42 @@
         <!-- SOBRE MI -->
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <p>Soy estudiante de programación con orientación al desarrollo back end. Trabajo principalmente con C#, .NET y bases de datos SQL Server, y tengo experiencia en el desarrollo de aplicaciones de consola, escritorio y web.</p>
-            <p>Actualmente cursando la Tecnicatura en Programación en la UTN, y por mi cuenta realizo un RoadMap de cursos de MaxiPrograma. Muy interesado en adquirir experiencia laboral en desarrollo de software y soporte técnico. Soy un apasionado por la tecnología, el aprendizaje constante y el trabajo en equipo.</p>
+            <p>Estudiante de programación en Universidad Tecnológica Nacional con conocimientos en C#, Java, SQL y desarrollo web.</p>
+            <p>Interesado en desarrollarme profesionalmente en el área de software, aportando capacidad de aprendizaje, resolución de problemas y trabajo en equipo.</p>
             
             <h3>Formacion:</h3>
             <section class="utn">
-                <p><strong>Universidad Tecnológica Nacional - Tecnicatura en Programación</strong></p>
-                <p>2024 - Actualidad</p>
+                <p><strong>Universidad Tecnológica Nacional - Tecnicatura en Programación | 2024 - Actualidad</strong></p>
                 <ul>
-                    <li>Estructuras de datos, algoritmos, Python, Java y MySQL</li>
-                    <li>Programación orientada a objetos en Java</li>
-                    <li>HTML, CSS Y JS</li>
+                    <li>Formación en estructuras de datos, algoritmos y lógica de programación.</li>
+                    <li>Desarrollo de aplicaciones de consola utilizando Python y Java.</li>
+                    <li>Programación orientada a objetos (POO) y patrones básicos de diseño.</li>
+                    <li>Diseño y gestión de bases de datos con MySQL.</li>
+                    <li>Desarrollo web con HTML, CSS y JavaScript.</li>
                 </ul>
             </section>
 
             <section class="utn">
-                <p><strong>MaxiPrograma – RoadMap de cursos utilizando C# en .NET</strong></p>
-                <p>2024 - Actualidad</p>
+                <p><strong>MaxiPrograma – Especialización en Desarrollo C# y .NET | 2024 - Actualidad</strong></p>
                 <ul>
-                    <li>Nivel 1: Fundamentos de programación</li>
-                    <li>Nivel 2: Programación orientada a objetos, WinForm con persistencia en SQLServer.</li>
-                    <li>Nivel 3: ASP WEB en .NET (En curso)</li>
+                    <li>Nivel 1: Fundamentos de programación.</li>
+                    <li>Nivel 2: Arquitectura y Backend, sólido dominio de POO en C# y diseño de aplicaciones robustas utilizando arquitectura en capas (separación de lógica de negocio y acceso a datos).</li>
+                    <li>Nivel 3: Desarrollo Web con ASP, creación de aplicaciones web dinámicas y escalables con ASP.NET, implementando interfaces responsivas y amigables (ej. con Bootstrap).</li>
+                    <li>Gestión de Datos: Integración y manipulación de datos con bases de datos relacionales (SQL Server), incluyendo el uso de Stored Procedures para la optimización y seguridad de las consultas.</li>
                 </ul>
             </section>
 
             <section class="utn">
-                <p><strong>Academia de inglés Rainbow</strong></p>
-                <p>2024 - Actualidad</p>
+                <p><strong>Academia de Inglés | 2024 - Actualidad</strong></p>
                 <ul>
                     <li>Curso de Inglés – Nivel B1</li>
+                </ul>
+            </section>
+
+            <section class="utn">
+                <p><strong>Educación Secundaria Completa | 2018 - 2023</strong></p>
+                <ul>
+                    <li>Bachiller de Economía en Bernardino Rivadavia</li>
                 </ul>
             </section>
         </section>
@@ -75,23 +85,18 @@
 
             <div class="contenedor-tecnologias">
                 <article class="tarjeta-tecnologia">
-                    <img src="img/img_html.png" alt="Logo HTML" loading="lazy">
-                    <p>HTML</p>
-                </article>
-
-                <article class="tarjeta-tecnologia">
-                    <img src="img/img_css.png" alt="Logo CSS" loading="lazy">
-                    <p>CSS</p>
-                </article>
-
-                <article class="tarjeta-tecnologia">
-                    <img src="img/img_js.png" alt="Logo JavaScript" loading="lazy">
-                    <p>JavaScript</p>
-                </article>
-
-                <article class="tarjeta-tecnologia">
                     <img src="img/img_c.webp" alt="Logo C#" loading="lazy">
                     <p>C#</p>
+                </article>
+
+                <article class="tarjeta-tecnologia">
+                    <img src="img/img_dotnet.svg" alt="Logo .NET" loading="lazy">
+                    <p>.NET</p>
+                </article>
+
+                <article class="tarjeta-tecnologia">
+                    <img src="img/img_asp.svg" alt="Logo ASP.NET Core" loading="lazy">
+                    <p>ASP.NET Core</p>
                 </article>
 
                 <article class="tarjeta-tecnologia">
@@ -112,7 +117,9 @@
                         Aplicación de consola desarrollada en C# utilizando POO.
                     </p>
                     <img src="img/img_cmd.png" alt="Proyecto de consola en C#" loading="lazy">
-                    <a href="https://github.com/AlvaroConcetti/EJERCICIO-POO" target="_blank">Ver proyecto</a>
+                    <div class="tarjeta-links">
+                        <a href="https://github.com/AlvaroConcetti/EJERCICIO-POO" target="_blank" class="btn-outline">Ver en GitHub</a>
+                    </div>
                 </article>
 
                 <article class="tarjeta-proyecto">
@@ -121,16 +128,21 @@
                         Aplicación de escritorio en C# con .NET y conexión a base de datos SQL Server.
                     </p>
                     <img src="img/img_catalogo.png" alt="Aplicación de escritorio en C#" loading="lazy">
-                    <a href="https://github.com/AlvaroConcetti/APP-COMERCIO-CON-BDD" target="_blank">Ver proyecto</a>
+                    <div class="tarjeta-links">
+                        <a href="https://github.com/AlvaroConcetti/APP-COMERCIO-CON-BDD" target="_blank" class="btn-outline">Ver en GitHub</a>
+                    </div>
                 </article>
 
                 <article class="tarjeta-proyecto">
-                    <h3>Aplicación Web</h3>
+                    <h3>Catálogo Web</h3>
                     <p>
-                        Aplicación web desarrollada con HTML, CSS y JavaScript.
+                        Aplicación web de catálogo desarrollada con ASP.NET Core y SQL Server.
                     </p>
-                    <img src="img/img_web.jpg" alt="Aplicación web" loading="lazy">
-                    <a href="https://github.com/AlvaroConcetti/MI-PORTFOLIO-WEB" target="_blank">Ver proyecto</a>
+                    <img src="img/img_catalogo_web.png" alt="Catálogo Web" loading="lazy">
+                    <div class="tarjeta-links">
+                        <a href="http://tpfinalcatalogoweb.somee.com/" target="_blank" class="btn-primary">Ver web</a>
+                        <a href="https://github.com/AlvaroConcetti/tp-final-nivel3-concetti-alvaro" target="_blank" class="btn-outline">Ver en GitHub</a>
+                    </div>
                 </article>
             </div>
         </section>
@@ -140,7 +152,7 @@
             <h2>Contacto</h2>
             <p>Comunicate conmigo si estás interesado en mis servicios como programador.</p>
 
-            <form action="https://formsubmit.co/alvaroconcetti@gmail.com" method="POST" />
+            <form id="form-contacto">
                 <div class="campo-formulario">
                     <label for="correo">Email</label>
                     <input type="email" name="Email" id="correo" placeholder="Tu email" required>
@@ -152,9 +164,6 @@
                 </div>
 
                 <button type="submit">Enviar</button>
-
-                <input type="hidden" name="_next" value="https://alvaroconcetti.github.io/MI-PORTFOLIO-WEB/">
-                <input type="hidden" name="_captcha" value="false">
             </form>
         </section>
 
@@ -168,16 +177,28 @@
             <a href="https://github.com/AlvaroConcetti" target="_blank">
                 <img src="img/img_github.png" alt="GitHub" height="40">
             </a>
-
-            <a href="docs/CV_Alvaro Concetti.pdf" download>
-                <img src="img/img_cv.png" alt="Descargar CV" height="40">
+            
+            <a href="https://www.linkedin.com/in/alvaro-concetti-89b7362bb/" target="_blank" class="linkedin">
+                <img src="img/img_linkedin.png" alt="LinkedIn" height="40">
             </a>
 
-            <a href="https://www.linkedin.com/in/alvaro-concetti-89b7362bb/" target="_blank">
-                <img src="img/img_linkedin.png" alt="LinkedIn" height="40">
+            <a href="docs/CV-Concetti-Alvaro.pdf" download>
+                <img src="img/img_cv.png" alt="Descargar CV" height="40">
             </a>
         </div>
     </footer>
+
+
+    <!-- TOAST -->
+    <div id="toast" class="toast" aria-live="polite">
+        <span class="toast-icon">✦</span>
+        <div class="toast-texto">
+            <strong>¡Mensaje enviado!</strong>
+            <span>Me voy a poner en contacto pronto.</span>
+        </div>
+    </div>
+
+    <script src="main.js" defer></script>
 
 </body>
 </html>
